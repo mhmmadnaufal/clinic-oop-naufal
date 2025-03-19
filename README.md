@@ -1,5 +1,5 @@
 # <h1 align="center">Clinic Management System - Java OOP</h1>
-<p align="center">Muhammad Naufal</p>
+<p align="center">Muhammad Naufal | 2311110034</p>
 
 ## Pendahuluan
 
@@ -18,7 +18,7 @@ NightFall Clinic mengalami kekacauan dalam pengelolaan data pasien. Kesalahan pe
 Encapsulation adalah konsep OOP yang menyembunyikan detail implementasi dari pengguna kelas dengan mendeklarasikan atribut sebagai private dan menyediakan metode getter dan setter untuk mengontrol aksesnya. Seperti di Nightfall clinic, Atribut pasien  (diagnosis) disembunyikan atau di private dan hanya bisa diakses melalui metode getter dan setter. Tujuannya agar akses data lebih aman, sehingga mencegah modifikasi langsung yang bisa menyebabkan inkonsistensi data. Dalam pemrograman berorientasi objek, kebutuhan enkapsulasi muncul karena adanya proses sharing data antar method. Dengan menggunakan enkapsulasi, maka keamanan dari data dan method yang ada didalamnya akan terjaga[1]. 
 
 ## Project Structure
-![Image](https://github.com/user-attachments/assets/581e0778-ced9-4b26-a0f9-cc4fd9472655)
+![Image](https://github.com/user-attachments/assets/1fb05c0b-1b32-4431-bf37-b88bb4a69eea)
 
 package dalam Nightfall Clinic dipisah untuk class dan program mainnya. untuk package Unguided.entities akan menyimpan kelas-kelas inti seperti Doctor, Patient, Appointment, DataChecker, dan DiagnosisCounter, sedangkan pacakages Unguided untuk menyimpan kelas ClinicMain yang menjalankan program utama. Tujuan pemisahan ini adalah agar strukturnya lebih rapi dan mudah dikelola. Kalau semua kelas ditempatkan dalam satu package, kode bisa jadi berantakan, serta sulit dicari. Dengan cara ini, semua bagian yang berhubungan dengan data klinik dikumpulkan dalam satu tempat (entities), sedangkan bagian yang bertugas menjalankan program utama tetap terpisah. 
 
@@ -325,7 +325,7 @@ public class DiagnosisCounter {
 ```
 
 #### Interpretasi Output Unguided keseluruhan:
-![Image](https://github.com/user-attachments/assets/e9426c86-9b8e-416a-9379-105cfbabd38c)
+![Image](https://github.com/user-attachments/assets/2aa7a814-2544-4ffa-b31d-7c8b6b50aa0b)
 
 Program diatas menggunakan konsep OOP dengan membuat beberapa objek yang merepresentasikan dokter, pasien, dan janji temu. Dua dokter yang dibuat adalah Dr. Aulia, seorang spesialis kardiologi, dan Dr. Bagas, seorang spesialis neurologi. Sementara itu, terdapat dua pasien, yaitu Leo, seorang pria berusia 25 tahun yang didiagnosis dengan hipertensi, dan Siti, seorang wanita berusia 30 tahun dengan diagnosis migrain. Setelah objek dokter dan pasien dibuat, program kemudian mengatur dua janji temu. Janji temu pertama mempertemukan Dr. Aulia dengan Leo pada tanggal 10 April 2025, sedangkan janji temu kedua mempertemukan Dr. Bagas dengan Siti pada tanggal 12 April 2025. Saat menampilkan data, informasi dokter dan pasien ditampilkan dengan jelas, namun diagnosis pasien tidak dicantumkan langsung dalam detail janji temu untuk menjaga kerahasiaan data. Selain itu, program clinic oop juga mencatat statistik diagnosis yang muncul menggunakan DiagnosisCounter. Dari data yang dikumpulkan, terdapat satu kasus hipertensi dan satu kasus migrain. Hal ini menunjukkan bahwa program dapat mengelompokkan serta menghitung jumlah kemunculan masing-masing diagnosis dengan baik.  
 
